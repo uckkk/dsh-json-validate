@@ -1,0 +1,14 @@
+{
+  "name": "dsh-json-validate",
+  "version": "0.1.0",
+  "description": "JSON 校验与修复：定位语法错误行列，自动修复注释/尾逗号/单引号",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": { ".": "./lib/index.js", "./cordis.patch.yml": "./cordis.patch.yml", "./package.json": "./package.json" },
+  "files": ["lib/index.js", "cordis.patch.yml", "README.md", "LICENSE"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "json", "validate", "校验"],
+  "author": "istone <ad571@qq.com>",
+  "license": "MIT",
+  "peerDependencies": { "@deepseek-ai/cordis": "^4.0.1", "@deepseek-ai/dsh-tools": ">=0.1.0-rc.6" }
+}
